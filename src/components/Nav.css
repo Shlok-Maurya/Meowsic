@@ -1,0 +1,110 @@
+.nav {
+    top: 0;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    color: rgb(196, 196, 196);
+    font-size: 16px;
+    font-weight: 600;
+    gap: 10px;
+    position: sticky;
+    align-items: center;
+}
+
+.meowsic {
+    margin: 15px 30px;
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.meowsic img{
+    height: 50px;
+    width: 50px;
+}
+
+.moto {
+    display: flex;
+    height: 9vh;
+    width:20vw;
+    color: #f3f3f3;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.moto strong {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.moto span {
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: normal;
+}
+
+
+.information1 ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-left:40vw;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.information1 ul li:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+
+
+/* Container for the profile icon and the menu */
+.profile-container {
+  position: relative; /* This makes the absolute dropdown position relative to this box */
+  margin-left: 26px;
+  cursor: pointer;
+  
+}
+
+/* The circular profile image */
+.profile-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #2c105c; /* Matches your theme color */
+  transition: transform 0.2s;
+  filter: invert(1);
+}
+
+
+/* The floating menu box */
+.dropdown-menu {
+  position: absolute;
+  top: 60px; /* Pushes it down below the icon */
+  right: 0;  /* Aligns it to the right edge */
+  background-color: rgb(253, 155, 84);
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* Individual items in the menu */
+.dropdown-item {
+  padding: 10px 15px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #7439db;
+}

@@ -1,0 +1,137 @@
+.right {
+    width: 71vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 6px;
+    margin: 0 0.4vw 5vh 0.3vw;
+    background-color: rgb(16, 16, 16);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+.right h2 {
+    margin-left: 2.2vw;
+    margin-top: 1.8vw;
+}
+
+.trending, .nine-tea {
+    height: 350px;
+    width: 100%;
+}
+
+.card-container {
+    margin: 1vw 2vw;
+    width: 67vw;
+    height: 270px;
+    display: flex;
+    column-gap: 1.8vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    padding: 4px;
+    flex-direction: column;
+    height: 270px;
+    width: 180px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.play-btn {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color:rgb(255, 168, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    right: 16px;
+    bottom: 90px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+    transform: translateY(10px);
+}
+
+.card:hover .play-btn,
+.card.playing .play-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.play-icon {
+    width: 0;
+    height: 0;
+    border-left: 15px solid #000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 4px;
+}
+
+.card.playing .play-icon {
+    width: 15px;
+    height: 20px;
+    margin-left: 0;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card.playing .play-icon::before,
+.card.playing .play-icon::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    background-color: #000;
+}
+
+.card img {
+    height: 171.5px;
+    object-fit: contain;
+    width: 171.5px;
+    border-radius: 5px;
+}
+
+.card strong {
+    padding: 4px 1px;
+    font-size: 16px;
+}
+
+.card span {
+    color: rgb(181, 181, 181);
+    padding: 4px 1px;
+    font-size: 14px;
+}
+
+.copyright {
+    width: 94%;
+    margin-left: 3%;
+    padding: 3% 0;
+    color: rgb(130, 130, 130);
+    font-size: 14px;
+    font-weight: 650;
+    border-top: 0.4px solid rgb(57, 57, 57);
+}

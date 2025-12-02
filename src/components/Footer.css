@@ -1,0 +1,36 @@
+.footer {
+    bottom: 1vh;
+    place-items: center;
+    width: 99.2vw;
+    height: 9vh;
+    margin: 0 0.4vw 0 0.4vw;
+    display: flex;
+    background: linear-gradient(to right, #432f46, #2d2140, #19294e);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-text {
+    display: flex;
+    margin-left: 1vw;
+    flex-direction: column;
+}
+
+.footer-text strong {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-text span {
+    font-size: 14px;
+    margin-top: 2px;
+    text-align: center;
+    font-weight: normal;
+}
