@@ -66,7 +66,7 @@ app.post('/', async (req, res) => {
 
 // ... keep your playlist routes here ...
 
-app.get('*', (req, res) => {
+app.get(/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
