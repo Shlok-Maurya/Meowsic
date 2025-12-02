@@ -11,7 +11,8 @@ export default function Register() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`http://localhost:3000/register`, { name, email, password })
+        const API_URL = import.meta.env.VITE_API_URL || "";
+        axios.post(`${API_URL}/register`, { name, email, password })
             .then(result => {
                 console.log(result);
                 navigate('/');
