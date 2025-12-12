@@ -13,7 +13,7 @@ function Nav() {
   return (
     <div className="nav">
       <div className="meowsic">
-        <img src="meowsic.svg" alt="meowsic" />
+        <img src="favicon.png" alt="meowsic" />
       </div>
 
       <div className="moto">

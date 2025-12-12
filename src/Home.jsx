@@ -12,7 +12,10 @@ function Home() {
       { title: "Par Ab Jo Aayegi Tu", artist: "AUR", filePath: "trending/Par Ab Jo Aayegi Tu - AUR(MpThree.in).mp3", coverPath: "image.png" },
       { title: "Sanam Teri Kasam", artist: "Ankit Tiwari", filePath: "trending/Sanam Teri Kasam Ankit Tiwari 128 Kbps.mp3", coverPath: "image.png" },
       { title: "Tera Chehra", artist: "Himesh Reshamiya", filePath: "trending/Tera Chehra Sanam Teri Kasam 128 Kbps.mp3", coverPath: "image.png" },
-      { title: "Tu Hai Kahan", artist: "AUR", filePath: "trending/Tu Hai Kahan-(Mr-Jat.in).mp3", coverPath: "image.png" }
+      { title: "Tu Hai Kahan", artist: "AUR", filePath: "trending/Tu Hai Kahan-(Mr-Jat.in).mp3", coverPath: "image.png" },
+      { title: "Fa9la", artist: "Flipperachi", filePath: "trending/Fa9la.mp3", coverPath: "image.png" },
+      { title: "I_M_Done", artist: "Maan Panu", filePath: "trending/I_M_Done.mp3", coverPath: "image.png" },
+      { title: "Main Rahoon Ya Na Rahoon", artist: "Armaan Malik", filePath: "trending/Main Rahoon Ya Na Rahoon.mp3", coverPath: "image.png" }
     ];
   
     const ninetSongs = [
@@ -22,7 +25,10 @@ function Home() {
       { title: "Jaane Kahan Mera Jigar Gaya Ji", artist: "Mohammed Rafi", filePath: "ninet/Jaane Kahan Mera Jigar Gaya Ji(KoshalWorld.Com).mp3", coverPath: "90s.jpg" },
       { title: "Kajra Mohabbat Wala", artist: "Asha Bhosle", filePath: "ninet/Kajra Mohabbat Wala (PenduJatt.Com.Se).mp3", coverPath: "90s.jpg" },
       { title: "Ruk Ja O Dil Deewane", artist: "Udit Narayan", filePath: "ninet/Ruk Ja O Dil Deewane - Dilwale Dulhania Le Jayenge 128 Kbps.mp3", coverPath: "90s.jpg" },
-      { title: "Tum Agar Saath Dene Ka Vada Karo", artist: "Mahendra Kapoor", filePath: "ninet/Tum Agar Saath Dene Ka Vada Karo - Hamraaz 128 Kbps.mp3", coverPath: "90s.jpg" }
+      { title: "Tum Agar Saath Dene Ka Vada Karo", artist: "Mahendra Kapoor", filePath: "ninet/Tum Agar Saath Dene Ka Vada Karo - Hamraaz 128 Kbps.mp3", coverPath: "90s.jpg" },
+      { title: "Aaja Piya Tohe Pyar Doon", artist: "Lata Mangeshkar", filePath: "ninet/Aaja Piya Tohe Pyar Doon.mp3", coverPath: "90s.jpg" },
+      { title: "Abhi na jao chhod kar", artist: "Mohammed Rafi, Asha Bhosle", filePath: "ninet/Abhi na jao chhod kar.mp3", coverPath: "90s.jpg" },
+      { title: "Isharon Isharon Men Dil Lenewale", artist: "Asha Bhosle", filePath: "ninet/Isharon Isharon Men Dil Lenewale.mp3", coverPath: "90s.jpg" }
     ];
   
     // STATE 

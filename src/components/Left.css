@@ -12,9 +12,9 @@
     margin: 0 0.3vw 5vh 0.4vw;
     background: linear-gradient(
         -45deg,
-        #022c34,
-        #34013a,
-        rgb(66, 3, 3)
+        #033944,
+        #44024b,
+        rgb(75, 5, 5)
     );
     background-size: 400% 400%;
     animation: gradientMove 11s ease infinite;
