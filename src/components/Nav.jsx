@@ -7,6 +7,8 @@ function Nav() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleLogout = () => {
+    localStorage.removeItem("userName");
+    localStorage.removeItem("token");
     window.location.href = "/";
   };
 

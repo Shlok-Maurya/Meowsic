@@ -118,8 +118,9 @@ function Home() {
       return () => {
         audio.removeEventListener('timeupdate', updateTime);
         audio.removeEventListener('ended', handleEnded);
+        audio.pause();         
       };
-    });
+    },[]);
   
   return (
     <div className="main">
