@@ -120,9 +120,9 @@
 }
 
 .cat img{
-    height: 120px;
-    width: 120px;
-    left:10vw;
+    height: 100px;
+    width: 100px;
+    left:11vw;
     bottom:11vh;
     position: fixed;
 }

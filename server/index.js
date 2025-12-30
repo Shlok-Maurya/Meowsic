@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import bcrypt from "bcrypt";
 import UserModel from "./models/User.js";
+import FeedbackModel from './models/Feedback.js';
 
 const app = express();
 app.use(express.json());
@@ -52,7 +53,7 @@ app.post('/', async (req, res) => {
             const isMatch = await bcrypt.compare(password, user.password);
 
             if (isMatch) {
-                res.json("Success");
+                res.json({ status: "Success", name: user.name })
             } else {
                 res.json("Incorrect password");
             }
@@ -64,7 +65,12 @@ app.post('/', async (req, res) => {
     }
 });
 
-// ... keep your playlist routes here ...
+app.post('/feedback', (req, res) => {
+    const { name, email, message } = req.body;
+    FeedbackModel.create({ name, email, message })
+        .then(feedback => res.json({ status: "Success", data: feedback }))
+        .catch(err => res.status(500).json({ status: "Error", error: err }));
+});
 
 app.get(/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'));

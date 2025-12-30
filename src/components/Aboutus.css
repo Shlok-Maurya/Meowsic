@@ -1,0 +1,85 @@
+.about-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.about-card {
+  background: #1e1e1e; 
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0px 70px rgba(116, 57, 219, 0.3); 
+  border: 1px solid #333;
+  position: relative;
+}
+
+.about-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.tagline {
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.about-content h3 {
+  color: #7439db; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.developer-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-stack span {
+  background: #333;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #7439db;
+}
+
+.version {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  color: #7439db;
+}

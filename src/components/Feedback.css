@@ -1,0 +1,115 @@
+.feedback-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.feedback-card {
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(116, 57, 219, 0.3); /* Purple Glow */
+  border: 1px solid #333;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color:white;
+  font-size: 1rem;
+}
+
+.form-group ::placeholder{
+  color: gray;
+}
+
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #7439db; 
+}
+
+.submit-btn {
+  margin-top: 10px;
+  background: #7439db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #5e2db3;
+}
+
+.feedback-info {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.feedback-info a {
+  color: #7439db;
+  text-decoration: none;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  color: #7439db;
+}

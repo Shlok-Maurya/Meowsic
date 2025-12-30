@@ -7,7 +7,7 @@ function Nav() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleLogout = () => {
-    window.location.href = "/"; 
+    window.location.href = "/";
   };
 
   return (
@@ -23,20 +23,28 @@ function Nav() {
 
       <div className="information1">
         <ul>
-          <li>About Us</li>
-          <li>Contact Support</li>
-          <li>Feedback</li>
+          <li
+            onClick={() => navigate('/about')}
+            style={{ cursor: "pointer" }}
+          >About Us
+          </li>
+          <li
+            onClick={() => navigate('/feedback')}
+            style={{ cursor: "pointer" }}
+          >
+          Feedback
+          </li>
         </ul>
       </div>
 
       <div className="profile-container">
-        <div 
-            className="profile-icon" 
-            onClick={() => setShowDropdown(!showDropdown)}
+        <div
+          className="profile-icon"
+          onClick={() => setShowDropdown(!showDropdown)}
         >
-          <img 
-            src="profileicon.png" 
-            alt="Profile" 
+          <img
+            src="profileicon.png"
+            alt="Profile"
           />
         </div>
 

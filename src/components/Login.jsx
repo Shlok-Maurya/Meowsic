@@ -16,8 +16,9 @@ const Login = () => {
     axios.post(`${API_URL}/`, { email, password })
       .then(result => {
         console.log(result);
-        if (result.data === "Success") {
-          navigate('/home');
+        if (result.data.status === "Success") {
+          localStorage.setItem("userName", result.data.name);
+          window.location.href = '/home';
         } else {
           alert(result.data);
         }
